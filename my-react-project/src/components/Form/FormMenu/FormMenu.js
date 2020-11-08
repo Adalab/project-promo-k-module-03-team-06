@@ -2,7 +2,6 @@
 import React, { Component } from "react";
 import menuIcon from "../../../images/fridacolor.png";
 import "./FormMenu.scss";
-import propTypes from "prop-types";
 
 class FormMenu extends Component {
   constructor(props) {
@@ -35,7 +34,5 @@ class FormMenu extends Component {
     );
   }
 }
-
-FormMenu.propTypes = {};
 
 export default FormMenu;
