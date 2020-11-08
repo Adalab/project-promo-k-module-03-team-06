@@ -69,36 +69,33 @@
     margin-bottom: 30px;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
       // background-color: #ce5e1e;
       box-shadow: 0 0 10px 0 $colorBrand01 inset, 0 0 10px 4px $colorBrand01;
       box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
       background-color: #fd8642;
-
-     }
+    }
   }
 
-    &__button--clicked {
-      background-color: #d5d5d5;
-      width: 199px;
-      height: 50px;
-      border-radius: 12px;
-      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-      border: none;
-      color: $colorPrimaryBackground;
-      text-transform: uppercase;
-      font-weight: 600;
-      padding: 13px 18px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-family: $fontMain;
-      font-size: 18px;
-      margin-bottom: 30px;
-      cursor: pointer;
-    }
-
-    
+  &__button--clicked {
+    background-color: #d5d5d5;
+    width: 199px;
+    height: 50px;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    border: none;
+    color: $colorPrimaryBackground;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 13px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $fontMain;
+    font-size: 18px;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
 
   &__icon {
     font-size: 22px;
@@ -144,8 +141,3 @@
 }
 
 // JS classes
-
-.hidden {
-  display: none;
-  // opacity: 0;
-}
