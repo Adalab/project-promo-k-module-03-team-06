@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import "./Preview.scss";
 import CardLink from "./CardLink/CardLink";
+import Reset from "./Reset/Reset";
 
 class Preview extends Component {
   constructor(props) {
@@ -11,16 +12,7 @@ class Preview extends Component {
   render() {
     return (
       <section className="card-preview">
-        <div className="card-reset">
-          <button
-            type="reset"
-            className="card-reset__btn js-reset"
-            aria-label="Reset"
-          >
-            <i className="far fa-trash-alt"></i>
-            Reset
-          </button>
-        </div>
+        <Reset />
         <div className="card">
           <div className="card-head js-border">
             <h1 className="card-head__title js-name">Nombre Apellido</h1>

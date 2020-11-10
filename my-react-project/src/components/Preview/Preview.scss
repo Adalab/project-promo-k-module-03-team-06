@@ -1,55 +1,5 @@
 @import "../../stylesheets/core/variables";
 
-.card-reset {
-  transform: translateX(-120px + 37.5px);
-
-  @media all and (min-width: 1024px) {
-    transform: translateX(-162.5px + 37.5px);
-  }
-
-  &__btn {
-    font-family: $fontMain;
-    font-weight: bold;
-    width: 75px;
-    height: 30px;
-    border-radius: 15px;
-    border: solid 1px $colorPrimaryBackground;
-    font-size: 12px;
-    line-height: 1.67;
-    color: $colorBrand08;
-    text-transform: uppercase;
-    padding: 6px 12px 6px 0;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10px;
-    margin-bottom: 20px;
-    outline-color: $colorBrand01;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
-
-    &:hover {
-      background-color: $colorBrand01;
-      border: solid 1px $colorBrand01;
-      color: $colorPrimaryBackground;
-      .fa-trash-alt {
-        color: $colorPrimaryBackground;
-      }
-    }
-    @media all and (min-width: 768px) {
-      transform: translateY(-80px);
-    }
-  }
-}
-
-.fa-trash-alt {
-  color: $colorBrand08;
-  font-weight: normal;
-  font-size: 12px;
-}
-
 .card-preview {
   height: 457px;
   width: 100%;
@@ -132,25 +82,4 @@
   align-items: center;
   height: 54px;
   padding: 12px 20px 12px 20px;
-
-  &__link {
-    text-decoration: none;
-  }
-
-  &__icon-container {
-    width: 32px;
-    height: 32px;
-    border: 2px solid $colorBrand03;
-    border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__icons {
-    font-size: 18px;
-    color: $colorBrand05;
-    font-weight: normal;
-    text-align: center;
-  }
 }

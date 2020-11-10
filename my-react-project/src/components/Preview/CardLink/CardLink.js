@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./CardLink.scss";
 
+
 class CardLink extends Component {
   constructor(props) {
     super(props);
@@ -8,7 +9,7 @@ class CardLink extends Component {
 
   render() {
     return (
-      <li className="card-list__item">
+      <li>
         <a
           href="#"
           className={"card-list__link js-" + this.props.linkType}
