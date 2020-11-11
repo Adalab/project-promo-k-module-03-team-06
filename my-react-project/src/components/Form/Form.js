@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 import React, { Component } from "react";
 import "./Form.scss";
 import Design from "./Design/Design";
