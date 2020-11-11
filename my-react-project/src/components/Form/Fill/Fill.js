@@ -12,7 +12,7 @@ class Fill extends Component {
 
   render() {
     return (
-      <div className="js-fill">
+      <div>
         <Input
           inputName="name"
           inputLabel="Nombre completo"

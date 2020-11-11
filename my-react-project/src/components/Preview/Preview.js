@@ -14,9 +14,9 @@ class Preview extends Component {
       <section className="card-preview">
         <Reset />
         <div className="card">
-          <div className="card-head js-border">
-            <h1 className="card-head__title js-name">Nombre Apellido</h1>
-            <h2 className="card-head__subtitle js-job">Front-end developer</h2>
+          <div className="card-head">
+            <h1 className="card-head__title">Nombre Apellido</h1>
+            <h2 className="card-head__subtitle">Front-end developer</h2>
           </div>
           <div className="card__image js__profile-image"></div>
           <ul className="card-list">

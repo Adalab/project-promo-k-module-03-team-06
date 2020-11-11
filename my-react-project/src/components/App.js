@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-constructor */
 import React, { Component } from "react";
 import Header from "./Header/Header";
 import Preview from "./Preview/Preview";
