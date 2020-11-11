@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-constructor */
 import React, { Component } from "react";
 import "./Reset.scss";
 
@@ -11,7 +12,7 @@ class Reset extends Component {
       <div className="card-reset">
         <button
           type="reset"
-          className="card-reset__btn js-reset"
+          className="card-reset__btn"
           aria-label="Reset"
         >
           <i className="far fa-trash-alt"></i>

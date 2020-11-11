@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-constructor */
 import React, { Component } from "react";
 import footerLogo from "../../images/logofooter.png";
 import adalabLogo from "../../images/logo-adalab.png";

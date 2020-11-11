@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-constructor */
 /* eslint-disable jsx-a11y/no-redundant-roles */
 import React, { Component } from "react";
 import "./Form.scss";
@@ -15,7 +16,7 @@ class Form extends Component {
     return (
       <section className="cards-form">
         <form
-          className="js-form form-container"
+          className="form-container"
           action=""
           method="POST"
           role="form"

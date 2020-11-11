@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-constructor */
 import React, { Component } from 'react';
 import './Input.scss';
 
@@ -11,7 +12,7 @@ class Input extends Component {
 			<div className="form">
 				<label htmlFor={this.props.inputName}>{this.props.inputLabel}</label>
 				<input
-					className="js-input form__inp"
+					className="form__inp"
 					type={this.props.inputType}
 					id={this.props.inputName}
 					name={this.props.inputName}

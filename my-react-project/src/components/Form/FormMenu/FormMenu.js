@@ -33,19 +33,14 @@ class FormMenu extends Component {
 	render() {
 		return (
 			<div className={this.state.collapse}>
-				<div
-					className={'js-' + this.props.fieldsetName + '-collapsable'}
-					onClick={this.handleCollapse}
-				>
+				<div onClick={this.handleCollapse}>
 					<legend className="legend">
 						<i className={this.props.fieldsetIcon + ' legend__icon'}></i>
 						<h2 className="legend__title">{this.props.fieldsetTitle}</h2>
 						<img
 							src={menuIcon}
 							alt="Menu"
-							className={
-								'js-arrow-' + this.props.fieldsetName + ' legend__arrow'
-							}
+							className="legend__arrow"
 							aria-label="Desplegar"
 						/>
 					</legend>

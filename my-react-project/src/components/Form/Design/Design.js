@@ -10,12 +10,12 @@ class Design extends Component {
 
   render() {
     return (
-      <div className="js-design colors">
+      <div className="colors">
         <h3 className="colors__title">Colores</h3>
         <div className="color__palets">
           <div className="color-palette-1">
             <input
-              className="js-palette-green js-palettes input1"
+              className="input1"
               type="radio"
               id="color-palette-1"
               name="color"
@@ -28,7 +28,7 @@ class Design extends Component {
           </div>
           <div className="color-palette-2">
             <input
-              className="js-palette-red js-palettes input2"
+              className="input2"
               type="radio"
               id="color-palette-2"
               name="color"
@@ -40,7 +40,7 @@ class Design extends Component {
           </div>
           <div className="color-palette-3">
             <input
-              className="js-palette-grey js-palettes input3"
+              className="input3"
               type="radio"
               id="color-palette-3"
               name="color"
