@@ -1,27 +1,30 @@
 /* eslint-disable no-useless-constructor */
-import React, { Component } from 'react';
-import './Input.scss';
+import React, { Component } from "react";
+import "./Input.scss";
 
-class Input extends Component {
-	constructor(props) {
-		super(props);
-	}
+const Input = (props) => {
+  const handleInput = (ev) => {
+    const value = ev.target.value;
+    const id = ev.target.id;
+    // console.log(value);
+    props.sendInput(id, value);
+  };
 
-	render() {
-		return (
-			<div className="form">
-				<label htmlFor={this.props.inputName}>{this.props.inputLabel}</label>
-				<input
-					className="form__inp"
-					type={this.props.inputType}
-					id={this.props.inputName}
-					name={this.props.inputName}
-					placeholder={"Ej: " + this.props.inputPlaceholder}
-					required
-				/>
-			</div>
-		);
-	}
-}
+  return (
+    <div className="form">
+      <label htmlFor={props.inputName}>{props.inputLabel}</label>
+      <input
+        onChange={handleInput}
+        className="form__inp"
+        type={props.inputType}
+        id={props.inputName}
+        name={props.inputName}
+        placeholder={"Ej: " + props.inputPlaceholder}
+        required
+        value={props.inputValue}
+      />
+    </div>
+  );
+};
 
 export default Input;
