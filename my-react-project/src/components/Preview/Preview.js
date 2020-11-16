@@ -20,7 +20,6 @@ const Preview = (props) => {
         </div>
         <img
           className="card__image js__profile-image"
-          // Ruta MAL!!!!!
           src={props.photo || Image}
           alt={props.name}
         />
