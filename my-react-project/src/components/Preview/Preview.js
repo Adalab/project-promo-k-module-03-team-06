@@ -5,11 +5,10 @@ import Reset from "./Reset/Reset";
 import Image from "../../images/Frida480x400gif.gif";
 
 const Preview = (props) => {
-  console.log(props.photo);
   return (
     <section className="card-preview">
       <Reset />
-      <div className="card">
+      <div className={"card " + props.palette}>
         <div className="card-head">
           <h1 className="card-head__title">
             {props.name || "Nombre Apellido"}
