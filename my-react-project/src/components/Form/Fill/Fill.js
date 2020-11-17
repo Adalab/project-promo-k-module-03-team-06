@@ -26,19 +26,19 @@ const Fill = (props) => {
       <InputImage photo={props.photo} />
 
       <Input
-        inputName="email"
+        inputName="mail"
         inputLabel="Email"
         inputType="email"
         inputPlaceholder="frida.Kahlo@gmail.com"
-        inputValue={props.tel}
+        inputValue={props.mail}
         sendInput={props.sendInput}
       />
       <Input
-        inputName="phone"
+        inputName="tel"
         inputLabel="Teléfono"
         inputType="tel"
         inputPlaceholder="666 555 444"
-        inputValue={props.mail}
+        inputValue={props.tel}
         sendInput={props.sendInput}
       />
       <Input

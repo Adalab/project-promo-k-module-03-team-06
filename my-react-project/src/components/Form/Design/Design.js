@@ -20,7 +20,6 @@ class Design extends Component {
               id="color-palette-1"
               name="color"
               value="color-palette-1"
-              checked
             />
             <div className="palette1-1"></div>
             <div className="palette1-2"></div>

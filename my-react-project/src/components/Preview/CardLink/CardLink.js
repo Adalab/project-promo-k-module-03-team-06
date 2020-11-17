@@ -8,6 +8,8 @@ const CardLink = (props) => {
         href={props.link || "/"}
         className="card-list__link"
         aria-label={props.linkAria}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <div className="card-list__icon-container">
           <i className={props.linkIcon + " card-list__icons"}></i>

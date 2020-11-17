@@ -1,12 +1,11 @@
 /* eslint-disable no-useless-constructor */
-import React, { Component } from "react";
+import PropTypes from "prop-types";
 import "./Input.scss";
 
 const Input = (props) => {
   const handleInput = (ev) => {
     const value = ev.target.value;
     const id = ev.target.id;
-    // console.log(value);
     props.sendInput(id, value);
   };
 
@@ -25,6 +24,11 @@ const Input = (props) => {
       />
     </div>
   );
+};
+
+Input.propTypes = {
+  inputName: PropTypes.string,
+  inputLabel: PropTypes.string,
 };
 
 export default Input;

@@ -28,28 +28,28 @@ const Preview = (props) => {
             linkType="tel"
             linkAria="Teléfono"
             linkIcon="fas fa-mobile-alt"
-            link={props.tel}
+            link={"tel:" + props.tel}
           />
 
           <CardLink
             linkType="email"
             linkAria="Email"
             linkIcon="fas fa-envelope"
-            link={props.email}
+            link={"mailto:" + props.email}
           />
 
           <CardLink
             linkType="linkedin"
             linkAria="Linkedin"
             linkIcon="fab fa-linkedin-in"
-            link={props.linkedin}
+            link={"https://www.linkedin.com/in/" + props.linkedin}
           />
 
           <CardLink
             linkType="github"
             linkAria="Github"
             linkIcon="fab fa-github-alt"
-            link={props.github}
+            link={"https://github.com/" + props.github}
           />
         </ul>
       </div>
