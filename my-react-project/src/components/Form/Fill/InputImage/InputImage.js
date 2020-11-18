@@ -5,9 +5,17 @@ import ReactDOM from "react-dom";
 
 const InputImage = (props) => {
   const getImage = () => {
-    const image = getImage.current.files[0];
-    console.log(image);
+    const photo = realClick.current.files[0];
+    const reader = new FileReader();
+    // console.log(photo);
+    reader.onload = () => {
+      const url = reader.result;
+      // console.log(url);
+      props.sendImage(url);
+    };
+    reader.readAsDataURL(photo);
   };
+
   const realClick = React.createRef();
   const handleFalseClick = () => {
     realClick.current.click();

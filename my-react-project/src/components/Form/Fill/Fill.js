@@ -23,7 +23,7 @@ const Fill = (props) => {
         sendInput={props.sendInput}
       />
 
-      <InputImage photo={props.photo} />
+      <InputImage photo={props.photo} sendImage={props.sendImage} />
 
       <Input
         inputName="mail"
