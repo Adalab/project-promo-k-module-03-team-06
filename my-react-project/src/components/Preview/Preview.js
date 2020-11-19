@@ -5,6 +5,7 @@ import Reset from "./Reset/Reset";
 import Image from "../../images/Frida480x400gif.gif";
 
 const Preview = (props) => {
+  const photo = props.photo || Image;
   return (
     <section className="card-preview">
       <Reset />
@@ -17,17 +18,18 @@ const Preview = (props) => {
             {props.job || "Front-end developer"}
           </h2>
         </div>
-        <img
+        <div
           className="card__image js__profile-image"
-          src={props.photo || Image}
-          alt={props.name}
-        />
+          // src={props.photo || Image}
+          // alt={props.name}
+          style={{ backgroundImage: "url(" + photo + ")" }}
+        ></div>
         <ul className="card-list">
           <CardLink
             linkType="tel"
             linkAria="Teléfono"
-            linkIcon="fas fa-mobile-alt"
-            link={"tel:" + props.tel}
+            linkIcon="fab fa-mobile-alt"
+            link={"tel:" + props.phone}
           />
 
           <CardLink

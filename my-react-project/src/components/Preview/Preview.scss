@@ -1,127 +1,126 @@
-@import '../../stylesheets/core/variables';
+@import "../../stylesheets/core/variables";
 
 .card-preview {
-	height: 457px;
-	width: 100%;
-	background-image: url(../../images/flores-verdes.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	border-radius: 6px;
+  height: 457px;
+  width: 100%;
+  background-image: url(../../images/flores-verdes.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
 
-	@media all and (min-width: 768px) {
-		grid-column: 2 / 3;
-		height: 100vh;
-		margin-top: 20px;
-	}
+  @media all and (min-width: 768px) {
+    grid-column: 2 / 3;
+    height: 100vh;
+    margin-top: 20px;
+  }
 }
 
 .card {
-	width: 240px;
-	height: 329px;
-	display: block;
-	background-color: white;
-	font-family: $fontUser;
-	box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
-	@media all and (min-width: 768px) {
-		transform: translateY(-80px);
-	}
-	@media all and (min-width: 1024px) {
-		width: 325px;
-		height: 400px;
-	}
+  width: 240px;
+  height: 329px;
+  display: block;
+  background-color: white;
+  font-family: $fontUser;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+  @media all and (min-width: 768px) {
+    transform: translateY(-80px);
+  }
+  @media all and (min-width: 1024px) {
+    width: 325px;
+    height: 400px;
+  }
 }
 
 .card-head {
-	border-left: 5px solid $colorBrand04;
-	text-align: left;
-	padding-left: 15px;
+  border-left: 5px solid $colorBrand04;
+  text-align: left;
+  padding-left: 15px;
 
-	&__title {
-		margin: 21px 0 4px;
-		font-size: 18px;
-		font-weight: bold;
-		line-height: 1.11;
-		color: $colorBrand05;
-	}
+  &__title {
+    margin: 21px 0 4px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.11;
+    color: $colorBrand05;
+  }
 
-	&__subtitle {
-		font-size: 16px;
-		font-weight: normal;
-		line-height: 1.25;
-		color: $colorBrand08;
-		margin-bottom: 10px;
-	}
+  &__subtitle {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.25;
+    color: $colorBrand08;
+    margin-bottom: 10px;
+  }
 }
 
 .card__image {
-	width: 240px;
-	height: 200px;
-	display: block;
-	// background-image: url(../../images/Frida480x400gif.gif);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	// border-top: 2px solid $colorBrand05;
-	// border-bottom: 2px solid $colorBrand05;
-	@media all and (min-width: 1024px) {
-		width: 325px;
-		height: 271px;
-	}
+  width: 240px;
+  height: 200px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media all and (min-width: 1024px) {
+    width: 325px;
+    height: 271px;
+  }
 }
 
 .card-list {
-	list-style-type: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	// border: 1px solid red;
-	align-items: center;
-	height: 54px;
-	padding: 12px 20px 12px 20px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 54px;
+  padding: 12px 20px 12px 20px;
 }
 
 // palette green 1
 .palette-green {
-	.card-head__title, .card-list__icons {
-		color: $colorBrand05;
-	}
-	.card-head {
-		border-color: $colorBrand04;
-	}
-	.card-list__icon-container {
-		border-color: $colorBrand03;
-		color: $colorBrand05;
-	}
+  .card-head__title,
+  .card-list__icons {
+    color: $colorBrand05;
+  }
+  .card-head {
+    border-color: $colorBrand04;
+  }
+  .card-list__icon-container {
+    border-color: $colorBrand03;
+    color: $colorBrand05;
+  }
 }
 
 // palette red 2
 .palette-red {
-	.card-head__title, .card-list__icons {
-		color: $colorBrand10;
-	}
-	.card-head {
-		border-color: $colorBrand11;
-	}
-	.card-list__icon-container {
-		border-color: $colorBrand12;
-		color: $colorBrand10;
-	}
+  .card-head__title,
+  .card-list__icons {
+    color: $colorBrand10;
+  }
+  .card-head {
+    border-color: $colorBrand11;
+  }
+  .card-list__icon-container {
+    border-color: $colorBrand12;
+    color: $colorBrand10;
+  }
 }
 
 // palette grey 3
 .palette-grey {
-	.card-head__title, .card-list__icons {
-		color: $colorBrand13;
-	}
-	.card-head {
-		border-color: $colorBrand14;
-	}
-	.card-list__icon-container {
-		border-color: $colorBrand15;
-		color: $colorBrand13;
-	}
+  .card-head__title,
+  .card-list__icons {
+    color: $colorBrand13;
+  }
+  .card-head {
+    border-color: $colorBrand14;
+  }
+  .card-list__icon-container {
+    border-color: $colorBrand15;
+    color: $colorBrand13;
+  }
 }

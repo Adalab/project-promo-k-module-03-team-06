@@ -1,17 +1,25 @@
 /* eslint-disable no-useless-constructor */
 import React from "react";
 import "./InputImage.scss";
-import ReactDOM from "react-dom";
 
 const InputImage = (props) => {
   const getImage = () => {
-    const image = getImage.current.files[0];
+    const image = realClick.current.files[0];
     console.log(image);
+    const reader = new FileReader();
+    reader.onload = () => {
+      const imageURL = reader.result;
+      props.sendImage(imageURL);
+    };
+    reader.readAsDataURL(image);
   };
+
   const realClick = React.createRef();
   const handleFalseClick = () => {
     realClick.current.click();
   };
+
+  const photo = props.photo || "";
 
   return (
     <div className="fill-image">
@@ -35,8 +43,10 @@ const InputImage = (props) => {
         />
       </div>
       <div className="form fill-image__profile">
-        <div className="js__profile-image"></div>
-        <div className="js__profile-preview profile__preview"></div>
+        <div
+          className="js__profile-preview profile__preview"
+          style={{ backgroundImage: "url(" + photo + ")" }}
+        ></div>
       </div>
     </div>
   );
