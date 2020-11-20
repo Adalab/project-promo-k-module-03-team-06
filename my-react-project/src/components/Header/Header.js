@@ -2,16 +2,17 @@
 import React, { Component } from "react";
 import logo from "../../images/logoversion2.png";
 import "./Header.scss";
+import { Link } from "react-router-dom";
 
 class Header extends Component {
   constructor(props) {
     super(props);
   }
-  
+
   render() {
     return (
       <header className="cards-header" role="banner">
-        <a href="index.html">
+        <Link to="/">
           <img
             src={logo}
             alt="Logo de Frida Kards"
@@ -19,7 +20,7 @@ class Header extends Component {
             className="cards-header__logo"
             aria-label="Logotipo de Frida Kards"
           />
-        </a>
+        </Link>
       </header>
     );
   }

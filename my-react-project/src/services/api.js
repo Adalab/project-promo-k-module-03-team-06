@@ -1,7 +1,7 @@
-import App from "../components/App";
+import CardCreator from "../components/CardCreator";
 
 const sendData = () => {
-  console.log(data);
+  console.log();
   return fetch(
     "https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/",
     { method: "POST" }
