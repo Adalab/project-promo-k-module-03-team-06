@@ -1,5 +1,3 @@
-import CardCreator from "../components/CardCreator";
-
 const sendData = (data) => {
   // console.log(data);
   return fetch(
@@ -14,12 +12,15 @@ const sendData = (data) => {
   )
     .then((response) => response.json())
     .then((result) => {
-      showURL(result);
+      showURL(result, result.success, result.cardURL, result.error);
     });
 };
 
-const showURL = (result) => {
+const showURL = (result, success, url, error) => {
   console.log(result);
+  console.log(success);
+  console.log(url);
+  console.log(error);
 };
 
 export { sendData };

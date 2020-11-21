@@ -5,24 +5,21 @@ import { useEffect, useState } from "react";
 import { sendData } from "../../../services/api";
 
 const Share = (props) => {
-  const [data, setData] = useState({});
   const [link, setLink] = useState("");
 
-  const sendDataToApi = () => {
-    sendData(props.data);
-    setData(props.data);
+  const getLink = () => {
+    console.log(link);
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    sendData(props.data);
+    setLink(props.result);
+  }, []);
 
   return (
     <>
       <div className="create-btn">
-        <button
-          type="button"
-          className="create-btn__button"
-          onClick={sendDataToApi}
-        >
+        <button type="button" className="create-btn__button" onClick={getLink}>
           <i className="far fa-address-card create-btn__icon"></i>
           Crear tarjeta
         </button>
