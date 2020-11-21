@@ -11,15 +11,8 @@ const sendData = (data) => {
   )
     .then((response) => response.json())
     .then((result) => {
-      showURL(result, result.success, result.cardURL, result.error);
+      return result;
     });
-};
-
-const showURL = (result, success, url, error) => {
-  console.log("result: ", result);
-  console.log("success: ", success);
-  console.log("url: ", url);
-  console.log("error: ", error);
 };
 
 export { sendData };

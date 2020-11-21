@@ -105,3 +105,23 @@
     font-size: 18px;
   }
 }
+
+.hide-all {
+  display: none;
+}
+
+.hide-link {
+  display: none;
+}
+
+.hide-error {
+  display: none;
+}
+
+.error-message {
+  font-weight: 600px;
+  font-size: 16px;
+  color: $colorBrand01;
+  text-align: center;
+  margin: 10px 0;
+}
