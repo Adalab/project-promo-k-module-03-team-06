@@ -1,5 +1,4 @@
 const sendData = (data) => {
-  // console.log(data);
   return fetch(
     "https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/",
     {
@@ -17,10 +16,10 @@ const sendData = (data) => {
 };
 
 const showURL = (result, success, url, error) => {
-  console.log(result);
-  console.log(success);
-  console.log(url);
-  console.log(error);
+  console.log("result: ", result);
+  console.log("success: ", success);
+  console.log("url: ", url);
+  console.log("error: ", error);
 };
 
 export { sendData };
