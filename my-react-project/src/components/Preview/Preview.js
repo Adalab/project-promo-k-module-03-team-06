@@ -8,7 +8,7 @@ const Preview = (props) => {
   const photo = props.photo || Image;
   return (
     <section className="card-preview">
-      <Reset />
+      <Reset sendReset={props.sendReset} />
       <div className={"card " + props.palette}>
         <div className="card-head">
           <h1 className="card-head__title">

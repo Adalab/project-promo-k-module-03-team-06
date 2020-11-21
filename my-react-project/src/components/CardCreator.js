@@ -94,6 +94,11 @@ const CardCreator = () => {
     setData({ ...data, photo: imageURL });
   };
 
+  // Manejando Reset
+  const handleReset = () => {
+    setName("");
+  };
+
   return (
     <>
       <Header />
@@ -107,6 +112,7 @@ const CardCreator = () => {
           linkedin={linkedin}
           github={github}
           palette={palette}
+          sendReset={handleReset}
         />
         <Form
           name={name}

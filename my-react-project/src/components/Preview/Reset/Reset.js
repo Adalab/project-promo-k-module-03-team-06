@@ -2,25 +2,24 @@
 import React, { Component } from "react";
 import "./Reset.scss";
 
-class Reset extends Component {
-  constructor(props) {
-    super(props);
-  }
+const Reset = (props) => {
+  const handleReset = () => {
+    props.sendReset();
+  };
 
-  render() {
-    return (
-      <div className="card-reset">
-        <button
-          type="reset"
-          className="card-reset__btn"
-          aria-label="Reset"
-        >
-          <i className="far fa-trash-alt"></i>
-          Reset
-        </button>
-      </div>
-    );
-  }
-}
+  return (
+    <div className="card-reset">
+      <button
+        onClick={handleReset}
+        type="reset"
+        className="card-reset__btn"
+        aria-label="Reset"
+      >
+        <i className="far fa-trash-alt"></i>
+        Reset
+      </button>
+    </div>
+  );
+};
 
 export default Reset;

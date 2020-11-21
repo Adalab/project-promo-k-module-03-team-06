@@ -44,7 +44,7 @@ const Share = (props) => {
           Crear tarjeta
         </button>
       </div>
-      <p className={"error-message " + hiddenError + " "}>{error}</p>
+      <p className={"error-message " + hiddenError + " "}>Error: {error}</p>
       <div className={"success " + hiddenLink + " " + hide}>
         <p className="success__text">La tarjeta ha sido creada:</p>
         <a
