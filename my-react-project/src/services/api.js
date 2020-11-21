@@ -1,10 +1,16 @@
 import CardCreator from "../components/CardCreator";
 
-const sendData = () => {
-  console.log();
+const sendData = (data) => {
+  // console.log(data);
   return fetch(
     "https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/",
-    { method: "POST" }
+    {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "content-type": "application/json",
+      },
+    }
   )
     .then((response) => response.json())
     .then((result) => {
@@ -12,6 +18,8 @@ const sendData = () => {
     });
 };
 
-const showURL = (result) => {};
+const showURL = (result) => {
+  console.log(result);
+};
 
-export default sendData;
+export { sendData };

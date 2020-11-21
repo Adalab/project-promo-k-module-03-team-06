@@ -94,8 +94,6 @@ const CardCreator = () => {
     setData({ ...data, photo: imageURL });
   };
 
-  console.log(data);
-
   return (
     <>
       <Header />
@@ -122,6 +120,7 @@ const CardCreator = () => {
           palette={palette}
           sendPalette={handlePalette}
           sendImage={handleImage}
+          data={data}
         />
       </main>
       <Footer />

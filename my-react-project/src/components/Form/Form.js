@@ -48,7 +48,7 @@ const Form = (props) => {
             fieldsetTitle="Comparte"
             fieldsetIcon="fas fa-share-alt"
           >
-            <Share />
+            <Share data={props.data} />
           </FormMenu>
         </fieldset>
       </form>
