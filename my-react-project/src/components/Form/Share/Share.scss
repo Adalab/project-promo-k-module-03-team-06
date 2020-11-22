@@ -105,3 +105,17 @@
     font-size: 18px;
   }
 }
+
+.error {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: $colorBrand11;
+  text-decoration: none;
+  margin: 10px;
+  text-align: center;
+}
+
+.hide-share {
+  display: none;
+}

@@ -46,9 +46,9 @@ const CardCreator = () => {
     console.log(inputId);
     console.log(inputValue);
     if (inputId === "name") {
-      setName(inputValue);
-      localStorage.setItem("name", inputValue);
-      setData({ ...data, name: inputValue });
+      setName(inputValue); //guardar en estado
+      localStorage.setItem("name", inputValue); // guardar en localstorage
+      setData({ ...data, name: inputValue }); //guardar en el objeto data
     } else if (inputId === "job") {
       setJob(inputValue);
       localStorage.setItem("job", inputValue);
@@ -122,6 +122,7 @@ const CardCreator = () => {
           palette={palette}
           sendPalette={handlePalette}
           sendImage={handleImage}
+          data={data}
         />
       </main>
       <Footer />
