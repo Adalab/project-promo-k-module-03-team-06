@@ -19,6 +19,7 @@ const CardCreator = () => {
   const [palette, setPalette] = useState(
     localStorage.getItem("palette") || "palette-green"
   );
+  
 
   // Transformando a valor numérico el valor inicial de palette
   let numberedPalette;

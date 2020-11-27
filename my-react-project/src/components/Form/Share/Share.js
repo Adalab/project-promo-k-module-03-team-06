@@ -12,6 +12,7 @@ const Share = (props) => {
   const [hideSuccess, setHideSuccess] = useState("hide-share");
   const [colorButton, setColorButton] = useState("create-btn__button");
   const [hideAll, setHideAll] = useState("hide-share");
+  const [loading, setLoading] = useState(false);
 
   const handleClick = () => {
     setDataButton(props.data);
@@ -21,8 +22,9 @@ const Share = (props) => {
 
   //ciclo de vida
   useEffect(() => {
+    setLoading(true);
     sendData(dataButton).then((result) => {
-      console.log(result);
+      setLoading(false);
       if (result.success === true) {
         setLink(result.cardURL);
         setHideSuccess("");
@@ -39,36 +41,45 @@ const Share = (props) => {
     <>
       <div className="create-btn">
         <button type="button" className={colorButton} onClick={handleClick}>
-          <i className="far fa-address-card create-btn__icon"></i>
+          <i className="fa fa-id-card-o create-btn__icon"></i>
           Crear tarjeta
         </button>
       </div>
       <div className={hideAll}>
-        <p className={"error " + hideError}>ERROR: {error}</p>
-        <div className={"success " + hideSuccess}>
-          <p className="success__text">La tarjeta ha sido creada:</p>
-          <a
-            href={link}
-            className="success__link"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {link}
-          </a>
-          <a
-            href={"https://twitter.com/intent/tweet?url=" + link}
-            title="Link para compartir en twitter"
-            target="_blank"
-            className="success__link--twitter"
-          >
-            <i
-              className="fab fa-twitter success__icon"
-              aria-hidden="true"
-              aria-label="Compartir en Twitter"
-            ></i>
-            Compartir en twitter
-          </a>
-        </div>
+        {loading === true ? (
+          <div className="loading">
+            <i className="fa fa-spinner"></i>
+            <p>Enviando tus datos... </p>
+          </div>
+        ) : (
+          <>
+            <p className={"error " + hideError}>ERROR: {error}</p>
+            <div className={"success " + hideSuccess}>
+              <p className="success__text">La tarjeta ha sido creada:</p>
+              <a
+                href={link}
+                className="success__link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {link}
+              </a>
+              <a
+                href={"https://twitter.com/intent/tweet?url=" + link}
+                title="Link para compartir en twitter"
+                target="_blank"
+                className="success__link--twitter"
+              >
+                <i
+                  className="fa fa-twitter success__icon"
+                  aria-hidden="true"
+                  aria-label="Compartir en Twitter"
+                ></i>
+                Compartir en twitter
+              </a>
+            </div>
+          </>
+        )}
       </div>
     </>
   );
