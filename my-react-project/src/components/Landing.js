@@ -33,7 +33,7 @@ const Landing = () => {
             <p class="steps__text">Comparte</p>
           </article>
         </section>
-        <Link to="/PetCodeGirls-Card-Creator">
+        <Link className="link-to-cardcreator" to="/PetCodeGirls-Card-Creator">
           <button
             class="main__link"
             title="Ir a crear mi tarjeta"
