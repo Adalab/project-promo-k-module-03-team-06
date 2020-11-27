@@ -94,7 +94,20 @@ const CardCreator = () => {
     setData({ ...data, photo: imageURL });
   };
 
-  console.log(data);
+  // Handle reset
+
+  const handleClickReset = () => {
+    setName("");
+    setJob("");
+    setPhone("");
+    setEmail("");
+    setLinkedin("");
+    setGithub("");
+    setPhoto("");
+    setPalette("palette-green");
+    setData([]);
+    localStorage.clear();
+  };
 
   return (
     <>
@@ -109,6 +122,7 @@ const CardCreator = () => {
           linkedin={linkedin}
           github={github}
           palette={palette}
+          handleClickReset={handleClickReset}
         />
         <Form
           name={name}
