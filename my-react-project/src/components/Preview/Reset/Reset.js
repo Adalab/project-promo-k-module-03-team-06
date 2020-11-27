@@ -15,7 +15,7 @@ const Reset = (props) => {
         aria-label="Reset"
         onClick={handleClickReset}
       >
-        <i className="far fa-trash-alt"></i>
+        <i className="fa fa-trash"></i>
         Reset
       </button>
     </div>

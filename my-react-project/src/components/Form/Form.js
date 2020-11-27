@@ -14,7 +14,7 @@ const Form = (props) => {
           <FormMenu
             fieldsetName="design"
             fieldsetTitle="Diseña"
-            fieldsetIcon="far fa-object-ungroup"
+            fieldsetIcon="fa fa-object-ungroup"
           >
             <Design palette={props.palette} sendPalette={props.sendPalette} />
           </FormMenu>
@@ -25,7 +25,7 @@ const Form = (props) => {
             <FormMenu
               fieldsetName="fill"
               fieldsetTitle="Rellena"
-              fieldsetIcon="far fa-keyboard"
+              fieldsetIcon="fa fa-keyboard-o"
             >
               <Fill
                 name={props.name}
@@ -46,7 +46,7 @@ const Form = (props) => {
           <FormMenu
             fieldsetName="share"
             fieldsetTitle="Comparte"
-            fieldsetIcon="fas fa-share-alt"
+            fieldsetIcon="fa fa-share-alt"
           >
             <Share data={props.data} />
           </FormMenu>
