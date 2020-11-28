@@ -1,50 +1,49 @@
 /* eslint-disable no-useless-constructor */
-import React, { useState } from "react";
+import React, { Component } from "react";
 import menuIcon from "../../../images/fridacolor.png";
 import "./FormMenu.scss";
 
-const FormMenu = (props) => {
-  const [collapse, setCollapse] = useState("hidden");
+class FormMenu extends Component {
+  constructor(props) {
+    super(props);
 
-  const handleCollapse = (ev) => {
-    //PENDIENTE TERMINAR COLAPSABLES
-    const id = ev.currentTarget.id;
-    if (id === "design") {
-    }
-  };
+    this.state = { collapse: "hidden" };
 
-  // handleCollapse() {
-  // 	this.setState(() => {
-  // 		let isCollapse;
-  // 		// let arrowUp;
-  // 		if (this.state.collapse === 'hidden') {
-  // 			isCollapse = '';
-  // 			// arrowUp = 'arrow-up';
-  // 		} else {
-  // 			isCollapse = 'hidden';
-  // 			// arrowUp = '';
-  // 		}
-  // 		return { collapse: isCollapse };
-  // 	});
-  // }
+    this.handleCollapse = this.handleCollapse.bind(this);
+  }
 
-  return (
-    <div className={collapse} id={props.fieldsetName}>
-      <div onClick={handleCollapse}>
-        <legend className="legend">
-          <i className={props.fieldsetIcon + " legend__icon"}></i>
-          <h2 className="legend__title">{props.fieldsetTitle}</h2>
-          <img
-            src={menuIcon}
-            alt="Menu"
-            className="legend__arrow"
-            aria-label="Desplegar"
-          />
-        </legend>
+  handleCollapse() {
+    this.setState(() => {
+      let isCollapse;
+      let arrowUp;
+      if (this.state.collapse === "hidden") {
+        isCollapse = "";
+        arrowUp = "arrow-up";
+      } else {
+        isCollapse = "hidden";
+        arrowUp = "";
+      }
+      return { collapse: isCollapse };
+    });
+  }
+  render() {
+    return (
+      <div className={this.state.collapse} id={this.props.fieldsetName}>
+        <div onClick={this.handleCollapse}>
+          <legend className="legend">
+            <i className={this.props.fieldsetIcon + " legend__icon"}></i>
+            <h2 className="legend__title">{this.props.fieldsetTitle}</h2>
+            <img
+              src={menuIcon}
+              alt="Menu"
+              className="legend__arrow"
+              aria-label="Desplegar"
+            />
+          </legend>
+        </div>
+        <div className="hide">{this.props.children}</div>
       </div>
-      <div className="hide">{props.children}</div>
-    </div>
-  );
-};
-
+    );
+  }
+}
 export default FormMenu;

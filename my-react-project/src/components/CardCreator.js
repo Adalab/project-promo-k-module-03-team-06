@@ -19,7 +19,6 @@ const CardCreator = () => {
   const [palette, setPalette] = useState(
     localStorage.getItem("palette") || "palette-green"
   );
-  
 
   // Transformando a valor numérico el valor inicial de palette
   let numberedPalette;
@@ -93,8 +92,6 @@ const CardCreator = () => {
     setData({ ...data, photo: imageURL });
   };
 
-<<<<<<< HEAD
-=======
   // Handle reset
 
   const handleClickReset = () => {
@@ -110,7 +107,6 @@ const CardCreator = () => {
     localStorage.clear();
   };
 
->>>>>>> main
   return (
     <>
       <Header />

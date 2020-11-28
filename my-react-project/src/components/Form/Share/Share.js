@@ -22,15 +22,9 @@ const Share = (props) => {
 
   //ciclo de vida
   useEffect(() => {
-<<<<<<< HEAD
-    console.log("Ejecuto el fetch");
-    sendData(dataButton).then((result) => {
-      console.log("Resultado ", result);
-=======
     setLoading(true);
     sendData(dataButton).then((result) => {
       setLoading(false);
->>>>>>> main
       if (result.success === true) {
         setLink(result.cardURL);
         setHideSuccess("");
@@ -52,34 +46,6 @@ const Share = (props) => {
         </button>
       </div>
       <div className={hideAll}>
-<<<<<<< HEAD
-        <p className={"error " + hideError}>ERROR: {error}</p>
-        <div className={"success " + hideSuccess}>
-          <p className="success__text">La tarjeta ha sido creada:</p>
-          <a
-            href={link}
-            className="success__link"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {link}
-          </a>
-          <a
-            href={"https://twitter.com/intent/tweet?url=" + link}
-            title="Link para compartir en twitter"
-            target="_blank"
-            rel="noreferrer"
-            className="success__link--twitter"
-          >
-            <i
-              className="fab fa-twitter success__icon"
-              aria-hidden="true"
-              aria-label="Compartir en Twitter"
-            ></i>
-            Compartir en twitter
-          </a>
-        </div>
-=======
         {loading === true ? (
           <div className="loading">
             <i className="fa fa-spinner"></i>
@@ -114,7 +80,6 @@ const Share = (props) => {
             </div>
           </>
         )}
->>>>>>> main
       </div>
     </>
   );

@@ -18,7 +18,6 @@ const Landing = () => {
         <p className="main__text">
           Crea mejores contactos profesionales de forma fácil y cómoda
         </p>
-<<<<<<< HEAD
         <section className="steps">
           <article className="steps__article">
             <i
@@ -37,20 +36,6 @@ const Landing = () => {
               aria-label="Comparte"
             ></i>
             <p className="steps__text">Comparte</p>
-=======
-        <section class="steps">
-          <article class="steps__article">
-            <i class="fa fa-object-ungroup steps__icon" aria-label="Diseña"></i>
-            <p class="steps__text">Diseña</p>
-          </article>
-          <article class="steps__article">
-            <i class="fa fa-keyboard-o steps__icon" aria-label="Rellena"></i>
-            <p class="steps__text">Rellena</p>
-          </article>
-          <article class="steps__article">
-            <i class="fa fa-share-alt steps__icon" aria-label="Comparte"></i>
-            <p class="steps__text">Comparte</p>
->>>>>>> main
           </article>
         </section>
         <Link className="link-to-cardcreator" to="/PetCodeGirls-Card-Creator">
