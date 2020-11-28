@@ -19,6 +19,7 @@ const CardCreator = () => {
   const [palette, setPalette] = useState(
     localStorage.getItem("palette") || "palette-green"
   );
+  
 
   // Transformando a valor numérico el valor inicial de palette
   let numberedPalette;
@@ -92,6 +93,24 @@ const CardCreator = () => {
     setData({ ...data, photo: imageURL });
   };
 
+<<<<<<< HEAD
+=======
+  // Handle reset
+
+  const handleClickReset = () => {
+    setName("");
+    setJob("");
+    setPhone("");
+    setEmail("");
+    setLinkedin("");
+    setGithub("");
+    setPhoto("");
+    setPalette("palette-green");
+    setData([]);
+    localStorage.clear();
+  };
+
+>>>>>>> main
   return (
     <>
       <Header />
@@ -105,6 +124,7 @@ const CardCreator = () => {
           linkedin={linkedin}
           github={github}
           palette={palette}
+          handleClickReset={handleClickReset}
         />
         <Form
           name={name}

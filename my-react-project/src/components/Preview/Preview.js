@@ -8,7 +8,7 @@ const Preview = (props) => {
   const photo = props.photo || Image;
   return (
     <section className="card-preview">
-      <Reset />
+      <Reset handleClickReset={props.handleClickReset} />
       <div className={"card " + props.palette}>
         <div className="card-head">
           <h1 className="card-head__title">
@@ -28,28 +28,28 @@ const Preview = (props) => {
           <CardLink
             linkType="tel"
             linkAria="Teléfono"
-            linkIcon="fab fa-mobile-alt"
+            linkIcon="fa fa-mobile"
             link={"tel:" + props.phone}
           />
 
           <CardLink
             linkType="email"
             linkAria="Email"
-            linkIcon="fas fa-envelope"
+            linkIcon="fa fa-envelope"
             link={"mailto:" + props.email}
           />
 
           <CardLink
             linkType="linkedin"
             linkAria="Linkedin"
-            linkIcon="fab fa-linkedin-in"
+            linkIcon="fa fa-linkedin"
             link={"https://www.linkedin.com/in/" + props.linkedin}
           />
 
           <CardLink
             linkType="github"
             linkAria="Github"
-            linkIcon="fab fa-github-alt"
+            linkIcon="fa fa-github-alt"
             link={"https://github.com/" + props.github}
           />
         </ul>
