@@ -17,15 +17,23 @@
     justify-content: space-between;
   }
   &__copy2020 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
     @media all and (min-width: 768px) {
+      flex-direction: row;
       margin-left: 41px;
+      margin-top: 5px;
+    }
+    &__logo {
+      height: 30px;
+      width: auto;
+      margin: 5px;
     }
   }
 
-  &__logofrida {
-    height: 30px;
-    width: auto;
-  }
   &__copy {
     font-size: 14px;
     font-family: $fontMain;

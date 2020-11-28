@@ -1,6 +1,6 @@
 /* eslint-disable no-useless-constructor */
 import React, { Component } from "react";
-import footerLogo from "../../images/logofooter.png";
+import footerLogo from "../../images/logo-PetCodeGirls.png";
 import adalabLogo from "../../images/logo-adalab.png";
 import "./Footer.scss";
 
@@ -13,10 +13,12 @@ class Footer extends Component {
     return (
       <footer className="footer" role="contentinfo">
         <div className="footer__copy2020">
+          <small className="footer__copy">Refactored by</small>
           <img
             src={footerLogo}
-            className="footer__logofrida"
-            alt="Logo Frida Kards"
+            className="footer__copy2020__logo"
+            alt="Logo Pet Code Girls"
+            title="Logo Pet Code Girls"
           />
           <small className="footer__copy">&copy; 2020</small>
         </div>
