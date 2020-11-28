@@ -43,8 +43,6 @@ const CardCreator = () => {
   });
 
   const handleInput = (inputId, inputValue) => {
-    console.log(inputId);
-    console.log(inputValue);
     if (inputId === "name") {
       setName(inputValue); //guardar en estado
       localStorage.setItem("name", inputValue); // guardar en localstorage
@@ -93,8 +91,6 @@ const CardCreator = () => {
     localStorage.setItem("photo", imageURL);
     setData({ ...data, photo: imageURL });
   };
-
-  console.log(data);
 
   return (
     <>

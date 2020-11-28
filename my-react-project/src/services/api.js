@@ -1,11 +1,9 @@
-import CardCreator from "../components/CardCreator";
-
-const sendData = (setDataButton) => {
+const sendData = (dataButton) => {
   return fetch(
     "https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/",
     {
       method: "POST",
-      body: JSON.stringify(setDataButton),
+      body: JSON.stringify(dataButton),
       headers: { "content-type": "application/json" },
     }
   )

@@ -21,8 +21,9 @@ const Share = (props) => {
 
   //ciclo de vida
   useEffect(() => {
+    console.log("Ejecuto el fetch");
     sendData(dataButton).then((result) => {
-      console.log(result);
+      console.log("Resultado ", result);
       if (result.success === true) {
         setLink(result.cardURL);
         setHideSuccess("");
@@ -59,6 +60,7 @@ const Share = (props) => {
             href={"https://twitter.com/intent/tweet?url=" + link}
             title="Link para compartir en twitter"
             target="_blank"
+            rel="noreferrer"
             className="success__link--twitter"
           >
             <i

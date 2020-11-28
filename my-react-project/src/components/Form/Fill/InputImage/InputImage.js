@@ -5,11 +5,12 @@ import "./InputImage.scss";
 const InputImage = (props) => {
   const getImage = () => {
     const image = realClick.current.files[0];
-    console.log(image);
+    console.log("image: ", image);
     const reader = new FileReader();
     reader.onload = () => {
       const imageURL = reader.result;
       props.sendImage(imageURL);
+      console.log("URL: ", imageURL);
     };
     reader.readAsDataURL(image);
   };
