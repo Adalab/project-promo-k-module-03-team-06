@@ -95,6 +95,7 @@
   }
 
   &__link {
+    cursor: pointer;
     width: 129px;
     height: 42px;
     display: block;
@@ -113,14 +114,14 @@
     &:hover {
       background-color: $colorBrand01;
     }
-    @media all and (min-width: 768px) {
-      margin-bottom: 59px;
-    }
-    @media all and (min-width: 1024px) {
-      margin-bottom: 40px;
-    }
   }
 }
 .link-to-cardcreator {
   margin-bottom: 30px;
+  @media all and (min-width: 768px) {
+    margin-bottom: 59px;
+  }
+  @media all and (min-width: 1024px) {
+    margin-bottom: 40px;
+  }
 }

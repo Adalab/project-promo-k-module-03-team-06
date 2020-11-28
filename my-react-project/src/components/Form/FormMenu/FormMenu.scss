@@ -1,47 +1,46 @@
-@import '../../../stylesheets/core/variables';
+@import "../../../stylesheets/core/variables";
 
 .legend {
-	// width: 100%;
-	display: grid;
-	align-items: center;
-	grid-template-columns: 18px 1fr 15.75px;
-	grid-template-rows: 1fr;
-	padding: 10px 0 7px;
-	margin-right: 0;
-	&__title {
-		text-align: left;
-		grid-column: 2;
-		grid-row: 1;
-		font-family: $fontMain;
-		font-size: 18px;
-		font-weight: 600px;
-		color: $colorBrand08;
-		text-transform: uppercase;
-		padding-left: 10px;
-	}
-	&__icon {
-		grid-column: 1;
-		grid-row: 1;
-		font-size: 18px;
-		color: $colorBrand01;
-	}
-	&__arrow {
-		grid-column: 3;
-		grid-row: 1;
-		text-align: right;
-		font-size: 18px;
-		color: $colorBrand08;
-		transition: transform 1s ease;
-	}
+  cursor: pointer;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 18px 1fr 15.75px;
+  grid-template-rows: 1fr;
+  padding: 10px 0 7px;
+  margin-right: 0;
+  &__title {
+    text-align: left;
+    grid-column: 2;
+    grid-row: 1;
+    font-family: $fontMain;
+    font-size: 18px;
+    font-weight: 600px;
+    color: $colorBrand08;
+    text-transform: uppercase;
+    padding-left: 10px;
+  }
+  &__icon {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 18px;
+    color: $colorBrand01;
+  }
+  &__arrow {
+    grid-column: 3;
+    grid-row: 1;
+    text-align: right;
+    font-size: 18px;
+    color: $colorBrand08;
+    transition: transform 1s ease;
+  }
 }
 
 .hidden {
-
   .hide {
-		display: none;
-	}
+    display: none;
+  }
 
-	.legend__arrow {
-		transform: rotate(360deg);
-	}
+  .legend__arrow {
+    transform: rotate(360deg);
+  }
 }

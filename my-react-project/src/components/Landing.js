@@ -21,18 +21,21 @@ const Landing = () => {
         <section className="steps">
           <article className="steps__article">
             <i
-              className="far fa-object-ungroup steps__icon"
+              className="fa fa-object-ungroup steps__icon"
               aria-label="Diseña"
             ></i>
             <p className="steps__text">Diseña</p>
           </article>
           <article className="steps__article">
-            <i className="far fa-keyboard steps__icon" aria-label="Rellena"></i>
+            <i
+              className="fa fa-keyboard-o steps__icon"
+              aria-label="Rellena"
+            ></i>
             <p className="steps__text">Rellena</p>
           </article>
           <article className="steps__article">
             <i
-              className="fas fa-share-alt steps__icon"
+              className="fa fa-share-alt steps__icon"
               aria-label="Comparte"
             ></i>
             <p className="steps__text">Comparte</p>
