@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.aa93f04c.chunk.css",
-    "main.js": "./static/js/main.e8a2e3c1.chunk.js",
-    "main.js.map": "./static/js/main.e8a2e3c1.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.cd21877f.js",
-    "runtime-main.js.map": "./static/js/runtime-main.cd21877f.js.map",
-    "static/js/2.98c43842.chunk.js": "./static/js/2.98c43842.chunk.js",
-    "static/js/2.98c43842.chunk.js.map": "./static/js/2.98c43842.chunk.js.map",
-    "static/js/3.e1a59f9d.chunk.js": "./static/js/3.e1a59f9d.chunk.js",
-    "static/js/3.e1a59f9d.chunk.js.map": "./static/js/3.e1a59f9d.chunk.js.map",
+    "main.css": "./static/css/main.62ac621b.chunk.css",
+    "main.js": "./static/js/main.93220d8c.chunk.js",
+    "main.js.map": "./static/js/main.93220d8c.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.003098fb.js",
+    "runtime-main.js.map": "./static/js/runtime-main.003098fb.js.map",
+    "static/js/2.25fc440e.chunk.js": "./static/js/2.25fc440e.chunk.js",
+    "static/js/2.25fc440e.chunk.js.map": "./static/js/2.25fc440e.chunk.js.map",
+    "static/js/3.7154435a.chunk.js": "./static/js/3.7154435a.chunk.js",
+    "static/js/3.7154435a.chunk.js.map": "./static/js/3.7154435a.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.aa93f04c.chunk.css.map": "./static/css/main.aa93f04c.chunk.css.map",
-    "static/js/2.98c43842.chunk.js.LICENSE.txt": "./static/js/2.98c43842.chunk.js.LICENSE.txt",
+    "static/css/main.62ac621b.chunk.css.map": "./static/css/main.62ac621b.chunk.css.map",
+    "static/js/2.25fc440e.chunk.js.LICENSE.txt": "./static/js/2.25fc440e.chunk.js.LICENSE.txt",
     "static/media/Frida480x400gif.71286df1.gif": "./static/media/Frida480x400gif.71286df1.gif",
     "static/media/Preview.scss": "./static/media/flores-verdes.6586216e.png",
     "static/media/logo-PetCodeGirls.90b0dd53.png": "./static/media/logo-PetCodeGirls.90b0dd53.png",
@@ -19,9 +19,9 @@
     "static/media/logoversion2.8f138f5b.png": "./static/media/logoversion2.8f138f5b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.cd21877f.js",
-    "static/js/2.98c43842.chunk.js",
-    "static/css/main.aa93f04c.chunk.css",
-    "static/js/main.e8a2e3c1.chunk.js"
+    "static/js/runtime-main.003098fb.js",
+    "static/js/2.25fc440e.chunk.js",
+    "static/css/main.62ac621b.chunk.css",
+    "static/js/main.93220d8c.chunk.js"
   ]
 }
