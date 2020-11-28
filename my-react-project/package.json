@@ -1,6 +1,6 @@
 {
   "homepage": "./",
-  "name": "my-react-project",
+  "name": "pet code-girls-refactoring-project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
